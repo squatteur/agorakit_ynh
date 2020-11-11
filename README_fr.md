@@ -1,29 +1,31 @@
-# App exemple pour YunoHost
+# Application AgoraKit pour YunoHost
 
-[![Niveau d'intégration](https://dash.yunohost.org/integration/REPLACEBYYOURAPP.svg)](https://dash.yunohost.org/appci/app/REPLACEBYYOURAPP) ![](https://ci-apps.yunohost.org/ci/badges/REPLACEBYYOURAPP.status.svg) ![](https://ci-apps.yunohost.org/ci/badges/REPLACEBYYOURAPP.maintain.svg)  
-[![Installer REPLACEBYYOURAPP avec YunoHost](https://install-app.yunohost.org/install-with-yunohost.png)](https://install-app.yunohost.org/?app=REPLACEBYYOURAPP)
 
 *[Read this readme in english.](./README.md)* 
 
-> *Ce package vous permet d'installer REPLACEBYYOURAPP rapidement et simplement sur un serveur YunoHost.  
+> *Ce package vous permet d'installer Agorakit rapidement et simplement sur un serveur YunoHost.  
 Si vous n'avez pas YunoHost, consultez [le guide](https://yunohost.org/#/install) pour apprendre comment l'installer.*
 
 ## Vue d'ensemble
-Description rapide de cette application.
+ Agorakit est un logiciel collaboratif qui permet de travailler en groupe.
+En créant des groupes, les participants peuvent discuter, fixer des dates, partager des documents et tenir tout le monde à jour.
+Agorakit est un forum, un calendrier, un gestionnaire de fichiers, un outil de cartographie et de notification par email. 
 
-**Version incluse :** 1.0
+**Version incluse :** 1.6
 
 ## Captures d'écran
 
-![](Lien vers une capture d'écran de cette application.)
+![Agorakit, logiciel collaboratif qui permet de travailler en groupe](https://www.agorakit.org/images/agorakit-banner.png)
 
 ## Démo
 
-* [Démo officielle](Lien vers un site de démonstration de cette application.)
+* [Démo officielle](https://app.agorakit.org/)
 
 ## Configuration
 
-Comment configurer cette application : via le panneau d'administration, un fichier brut en SSH ou tout autre moyen.
+1. Nom de domaine comme asset.domain.tld
+1. Pas encore de support LDAP
+1. Cette application est multi instance (Vous pouvez en avoir plusieurs sur votre serveur YunoHost)
 
 ## Documentation
 
@@ -39,9 +41,6 @@ Comment configurer cette application : via le panneau d'administration, un fichi
 
 #### Architectures supportées
 
-* x86-64 - [![Build Status](https://ci-apps.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
-* ARMv8-A - [![Build Status](https://ci-apps-arm.yunohost.org/ci/logs/REPLACEBYYOURAPP%20%28Apps%29.svg)](https://ci-apps-arm.yunohost.org/ci/apps/REPLACEBYYOURAPP/)
-
 ## Limitations
 
 * Limitations connues.
@@ -55,22 +54,12 @@ https://yunohost.org/packaging_apps
 
 ## Liens
 
- * Signaler un bug : https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/issues
- * Site de l'application : Lien vers le site officiel de cette application.
- * Dépôt de l'application principale : Lien vers le dépôt officiel de l'application principale.
+ * Signaler un bug : https://github.com/squatteur/agorakit_ynh_test/issues
+ * Site de l'application : https://www.agorakit.org
+ * Dépôt de l'application principale : https://github.com/agorakit/agorakit
  * Site web YunoHost : https://yunohost.org/
 
 ---
 
 Informations pour les développeurs
 ----------------
-
-**Seulement si vous voulez utiliser une branche de test pour le codage, au lieu de fusionner directement dans la banche principale.**
-Merci de faire vos pull request sur la [branche testing](https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing).
-
-Pour essayer la branche testing, procédez comme suit.
-```
-sudo yunohost app install https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
-ou
-sudo yunohost app upgrade REPLACEBYYOURAPP -u https://github.com/YunoHost-Apps/REPLACEBYYOURAPP_ynh/tree/testing --debug
-```
