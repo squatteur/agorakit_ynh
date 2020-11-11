@@ -1,4 +1,4 @@
-# Application AgoraKit pour YunoHost
+# App AgoraKit pour YunoHost
 
 
 *[Read this readme in english.](./README.md)* 

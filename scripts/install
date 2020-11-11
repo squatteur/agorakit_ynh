@@ -137,7 +137,6 @@ ynh_replace_string  "__LANGUAGE__"  "$language"   "$final_path/.env"
 # setup application config
 ( cd $final_path && php$YNH_PHP_VERSION artisan key:generate -n --force --env)
 ( cd $final_path && php$YNH_PHP_VERSION artisan migrate -n --force)
-( cd $final_path && php$YNH_PHP_VERSION artisan storage:link -n)
 ( cd $final_path && php$YNH_PHP_VERSION artisan config:clear -n)
 ( cd $final_path && php$YNH_PHP_VERSION artisan config:cache -n)
 
@@ -159,7 +158,7 @@ ynh_script_progression --message="Securing files and directories..."
 # Set permissions to app files
 chown -R $app: $final_path
 chmod -R 755 $final_path/storage
-#chmod -R 755 $final_path/public/uploads
+chmod -R 755 $final_path/public/uploads
 
 #=================================================
 # SETUP SSOWAT

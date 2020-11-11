@@ -8,7 +8,7 @@
     },
     "version": "1.6~ynh1",
     "url": "https://agorakit.org/",
-    "license": "AGPL",
+    "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Bestel Squatteur",
         "email": "bestel@squatteur.org"
@@ -46,6 +46,9 @@
                 "ask": {
                     "en": "Is it a public application?"
                 },
+                "help": {
+                    "en": "Some explanation"
+                 },
                 "default": true
             },
             {
