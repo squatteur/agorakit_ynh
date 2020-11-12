@@ -79,6 +79,11 @@ ynh_secure_remove --file="/etc/cron.d/$app"
 # Remove a directory securely
 ynh_secure_remove --file="/etc/$app/"
 
+#=================================================
+# REMOVE THE LOG FILE
+#=================================================
+ynh_script_progression --message="Removing the log file..."
+
 # Remove the log files
 ynh_secure_remove --file="/var/log/$app/"
 
