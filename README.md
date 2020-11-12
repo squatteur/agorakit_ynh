@@ -1,6 +1,6 @@
 # AgoraKit app for YunoHost
 
-
+*[Lire ce readme en français.](./README_fr.md)*
 > *This package allows you to install Agorakit quickly and simply on a YunoHost server.  
 If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/install) to learn how to install it.*
 
@@ -11,7 +11,7 @@ Agorakit is a forum, calendar, file manager, mapping tool and email notifier.
 
 **Shipped version:** 1.6
 
-## Captures d'écran
+## Screenshots
 
 ![Agorakit, groupware for citizens](https://www.agorakit.org/images/agorakit-banner.png)
 
