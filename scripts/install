@@ -24,7 +24,7 @@ ynh_abort_if_errors
 #=================================================
 
 domain=$YNH_APP_ARG_DOMAIN
-path_url="/"
+path_url=$YNH_APP_ARG_PATH
 admin=$YNH_APP_ARG_ADMIN
 is_public=$YNH_APP_ARG_IS_PUBLIC
 language=$YNH_APP_ARG_LANGUAGE
@@ -133,6 +133,7 @@ ynh_replace_string  "__DB_PASS__"   "$db_pwd"     "$final_path/.env"
 ynh_replace_string  "__DB_USER__"   "$db_name"    "$final_path/.env"
 ynh_replace_string  "yunodomain"    "$domain"     "$final_path/.env"
 ynh_replace_string  "__LANGUAGE__"  "$language"   "$final_path/.env"
+ynh_replace_string  "__PATH__"  	"$path_url"	  "$final_path/.env"
 
 # setup application config
 ( cd $final_path && php$YNH_PHP_VERSION artisan key:generate -n --force --env)
