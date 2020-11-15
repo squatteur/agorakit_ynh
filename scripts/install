@@ -131,7 +131,7 @@ cp ../conf/.env $final_path/.env
 ynh_replace_string  "__DB_NAME__"   "$db_name"    "$final_path/.env"
 ynh_replace_string  "__DB_PASS__"   "$db_pwd"     "$final_path/.env"
 ynh_replace_string  "__DB_USER__"   "$db_name"    "$final_path/.env"
-ynh_replace_string  "yunodomain"    "$domain"     "$final_path/.env"
+ynh_replace_string  "__DOMAIN__"    "$domain"     "$final_path/.env"
 ynh_replace_string  "__LANGUAGE__"  "$language"   "$final_path/.env"
 
 # setup application config
