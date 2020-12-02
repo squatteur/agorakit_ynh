@@ -33,13 +33,7 @@ ynh_script_progression --message="Removing the MySQL database..."
 # Remove a database if it exists, along with the associated user
 ynh_mysql_remove_db --db_user=$db_user --db_name=$db_name
 
-#=================================================
-# REMOVE DEPENDENCIES
-#=================================================
-ynh_script_progression --message="Removing dependencies..."
 
-# Remove metapackage and its dependencies
-ynh_remove_app_dependencies
 
 #=================================================
 # REMOVE APP MAIN DIR
@@ -65,9 +59,20 @@ ynh_script_progression --message="Removing php-fpm configuration..."
 # Remove the dedicated php-fpm config
 ynh_remove_fpm_config
 
+
+
 # Restore the file first, so it can have a backup if different
 #phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
 #ynh_restore_file --origin_path="/etc/php/$phpversion/fpm/pool.d/$app.conf"
+
+#=================================================
+# REMOVE DEPENDENCIES
+#=================================================
+ynh_script_progression --message="Removing dependencies..."
+
+# Remove metapackage and its dependencies
+ynh_remove_app_dependencies
+
 
 #=================================================
 # SPECIFIC REMOVE
