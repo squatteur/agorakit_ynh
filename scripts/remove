@@ -34,6 +34,16 @@ ynh_script_progression --message="Removing the MySQL database..."
 ynh_mysql_remove_db --db_user=$db_user --db_name=$db_name
 
 #=================================================
+# REMOVE PHP-FPM CONFIGURATION
+#=================================================
+ynh_script_progression --message="Removing php-fpm configuration..."
+
+# Remove the dedicated php-fpm config
+ 
+ynh_remove_fpm_config
+
+
+#=================================================
 # REMOVE DEPENDENCIES
 #=================================================
 ynh_script_progression --message="Removing dependencies..."
@@ -57,16 +67,7 @@ ynh_script_progression --message="Removing nginx web server configuration..."
 # Remove the dedicated nginx config
 ynh_remove_nginx_config
 
-#=================================================
-# REMOVE PHP-FPM CONFIGURATION
-#=================================================
-ynh_script_progression --message="Removing php-fpm configuration..."
 
-# Remove the dedicated php-fpm config
- 
-mkdir -p /var/www/agorakit
-ynh_remove_fpm_config
-rm -r /var/www/agorakit
 
 # Restore the file first, so it can have a backup if different
 #phpversion=$(ynh_app_setting_get --app=$app --key=phpversion)
