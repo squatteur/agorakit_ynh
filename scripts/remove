@@ -79,7 +79,7 @@ ynh_remove_fpm_config
 ynh_secure_remove --file="/etc/cron.d/$app"
 
 # Remove a directory securely
-ynh_secure_remove --file="/etc/$app/"
+#ynh_secure_remove --file="/etc/$app/"
 
 #=================================================
 # REMOVE THE LOG FILE
