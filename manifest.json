@@ -49,7 +49,11 @@
                     "en": "Is it a public application?",
                     "fr": "Est-ce une application publique ?"
                 },
-                "default": true
+                "default": true,
+                "help": {
+					"en": "A public Agorakit will be publicly visible for everyone. If you're looking for a public website, you should choose to install a public Agorakit.",
+					"fr": "Un AgoraKit public sera visible publiquement pour tous. Si vous recherchez un site public, vous devriez choisir d'installer un AgoraKit public."
+				}
             },
             {
                 "name": "language",
@@ -60,6 +64,14 @@
                 },
                 "choices": ["en", "fr", "de", "es", "ru", "es-ES"],
                 "default": "fr"
+            },
+            {
+                "name": "mapbox_token",
+                "type": "string",
+                "ask": {
+                    "en": "Enter your MapBox token for the application",
+                    "fr": "Saisissez votre token MapBox pour l'application"
+                }
             }
         ]
     }

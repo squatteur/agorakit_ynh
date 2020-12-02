@@ -28,6 +28,7 @@ path_url="/"
 admin=$YNH_APP_ARG_ADMIN
 is_public=$YNH_APP_ARG_IS_PUBLIC
 language=$YNH_APP_ARG_LANGUAGE
+mapbox_token=$YNH_APP_ARG_MAPBOX_TOKEN
 
 app=$YNH_APP_INSTANCE_NAME
 
@@ -52,6 +53,7 @@ ynh_app_setting_set --app=$app --key=path --value=$path_url
 ynh_app_setting_set --app=$app --key=admin --value=$admin
 ynh_app_setting_set --app=$app --key=is_public --value=$is_public
 ynh_app_setting_set --app=$app --key=language --value=$language
+ynh_app_setting_set --app=$app --key=mapbox_token --
 
 #=================================================
 # STANDARD MODIFICATIONS
@@ -128,11 +130,12 @@ email=$(ynh_user_get_info $admin 'mail')
 cp ../conf/.env $final_path/.env
 
 
-ynh_replace_string  "__DB_NAME__"   "$db_name"    "$final_path/.env"
-ynh_replace_string  "__DB_PASS__"   "$db_pwd"     "$final_path/.env"
-ynh_replace_string  "__DB_USER__"   "$db_name"    "$final_path/.env"
-ynh_replace_string  "__DOMAIN__"    "$domain"     "$final_path/.env"
-ynh_replace_string  "__LANGUAGE__"  "$language"   "$final_path/.env"
+ynh_replace_string  "__DB_NAME__"   	"$db_name"    		"$final_path/.env"
+ynh_replace_string  "__DB_PASS__"   	"$db_pwd"     		"$final_path/.env"
+ynh_replace_string  "__DB_USER__"   	"$db_name"    		"$final_path/.env"
+ynh_replace_string  "__DOMAIN__"    	"$domain"     		"$final_path/.env"
+ynh_replace_string  "__LANGUAGE__"		"$language"   		"$final_path/.env"
+ynh_replace_string  "__MAPBOX_TOKEN__"  "$mapbox_token"		"$final_path/.env"
 
 # setup application config
 ( cd $final_path && php$YNH_PHP_VERSION artisan key:generate -n --force --env)
