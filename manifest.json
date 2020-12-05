@@ -6,12 +6,12 @@
         "en": "Organization tool for citizen's collectives",
         "fr": "boite à outils pour collectifs citoyens"
     },
-    "version": "1.7~ynh1",
+    "version": "1.6~ynh1",
     "url": "https://agorakit.org/",
     "license": "AGPL-3.0-only",
     "maintainer": {
         "name": "Bestel Squatteur",
-        "email": "bestel@squatteur.net"
+        "email": "bestel@squatteur.org"
     },
     "requirements": {
         "yunohost": ">= 3.8"

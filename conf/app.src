@@ -1,5 +1,5 @@
-SOURCE_URL=https://github.com/agorakit/agorakit/archive/1.7.tar.gz
-SOURCE_SUM=81b4ec1d778175826d397f3d76992f070696e1d042e73c1ddc1782a3ba93c7a7
+SOURCE_URL=https://github.com/agorakit/agorakit/archive/V1.6.tar.gz
+SOURCE_SUM=aeb1141dd33dcd43b352295000239a94326f4b65f178753b62299e385a9604df
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
