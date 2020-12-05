@@ -9,7 +9,7 @@ Agorakit is web-based, open source groupware for collectives.
 By creating collaborative groups, people can discuss topics, organize events, store files and keep everyone updated as needed.
 Agorakit is a forum, calendar, file manager, mapping tool and email notifier. 
 
-**Shipped version:** 1.6
+**Shipped version:** 1.7
 
 ## Screenshots
 
