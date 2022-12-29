@@ -12,8 +12,6 @@
     "upstream": {
         "license": "AGPL-3.0-only",
         "website": "https://www.agorakit.org/",
-        "demo": "https://lycheeorg.github.io/demo/",
-        "admindoc": "https://lycheeorg.github.io/docs/",
         "code": "https://github.com/agorakit/agorakit"
     },
     "license": "AGPL-3.0-only",
